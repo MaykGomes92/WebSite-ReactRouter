@@ -7,21 +7,22 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { CgClose } from "react-icons/cg";
 
 const Header = () => {
-  const [menu, setMenu] = React.useState(true);
+  const [menu, setMenu] = React.useState(false);
 
   function handleClick() {
     setMenu(!menu);
-  }
+  } 
+
 
   return (
     <section className={styles.section}>
       <header className={styles.header}>
         <button onClick={handleClick} className={styles.menuBurger}>
-          {menu ? <TiThMenuOutline /> : <CgClose />}
+          {menu ? <CgClose /> : <TiThMenuOutline />}
         </button>
 
         <img className={styles.logoHeader} src={LogoVik} alt="Logo Vikings" />
-        <ul className={menu ? styles.normal : styles.menuUl}>
+        <ul className={menu ? styles.menuUl : styles.menNormal}>
           <li>
             <Link to="">Home</Link>
           </li>

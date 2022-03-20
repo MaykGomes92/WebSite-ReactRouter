@@ -24,11 +24,11 @@
   display: none;
 }
 
-.normal {
+.menNormal {
   display: flex;
 }
 
-.normal li a {
+.menNormal li a {
   font-size: 1.3rem;
   color: #cecece;
   text-decoration: none;
@@ -36,7 +36,23 @@
   transition: all 0.4s;
 }
 
-.normal li a:hover {
+.menNormal li a:hover {
+  color: #fff;
+}
+
+.menuUl {
+  display: flex;
+}
+
+.menuUl li a {
+  font-size: 1.3rem;
+  color: #cecece;
+  text-decoration: none;
+  padding: 0 30px;
+  transition: all 0.4s;
+}
+
+.menuUl li a:hover {
   color: #fff;
 }
 
@@ -54,10 +70,6 @@
 }
 
 @media (max-width: 880px) {
-  .header .normal {
-    display: none;
-  }
-
   .menuBurger {
     display: block;
     position: absolute;
@@ -68,6 +80,11 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+  }
+
+  .menNormal{
+    position: absolute;
+    left: -500px;
   }
 
   .menuBurger:hover {
