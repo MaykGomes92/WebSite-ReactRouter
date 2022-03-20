@@ -1,0 +1,132 @@
+.sectionHistory{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../img/691823.jpg');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr;    
+    grid-template-columns: 500px 500px 1fr;
+}
+
+.sectionHistory article{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.sectionHistory img{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* ====================== TEXTO RIGHT ========================== */
+.sectionHistory p {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.title{
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+.especificacao span{
+    color: #ccc;
+    border-right: 1px solid #ccc;
+    padding: 0px 5px;
+}
+
+.especificacao span:last-child{
+    border: none;
+}
+
+.especificacao span:nth-child(3){
+    border-left: 1px solid #ccc;
+    margin-left: 5px;
+}
+
+.especificacao span:nth-child(2){
+    margin-left: 5px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.atores{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.atores span{
+    color: #ddd;
+}
+
+.criacao {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.criacao span{
+    color: #ddd;
+}
+
+
+
+/* ===================== RESPONSIVIDADE =========================== */
+
+
+@media(max-width:1380px){
+    .sectionHistory{
+        grid-template-columns: 1fr 1fr;
+        background-size: cover;
+        background-position-x: 60%;
+        grid-template-rows: 1fr auto 1fr;
+    }
+    .sectionHistory article{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        justify-content: end;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:1030px){
+    .sectionHistory article{
+        margin-top: 5px;
+    }
+}
+
+
+@media(max-width:880px){
+    .sectionHistory{
+        background-size: cover;
+        background-position-x: 21%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sectionHistory article{
+        width: 400px;
+        grid-column-start: 2;
+    }
+}
+
+
+
+@media(max-width:580px){
+    .sectionHistory{
+        background-position-x: 40%;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px 1fr;
+        height: 100vh;
+        padding: 10px;
+    }
+    
+    .sectionHistory article{
+        grid-column-start: 1;
+        width: 100vw;
+    }
+}

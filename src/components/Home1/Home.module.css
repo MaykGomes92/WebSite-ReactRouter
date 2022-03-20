@@ -1,0 +1,91 @@
+/* ================== SECTION ===================== */
+
+.sectionText {
+  display: grid;
+  grid-column: 1fr;
+  grid-template-rows: 400px 1fr 400px;
+  grid-gap: 3rem;
+  background: linear-gradient(45deg, rgba(5, 5, 21, 0.6), rgba(2, 2, 9, 0.6)),
+    url("../../img/676749.jpg"), no-repeat;
+  background-size: cover;
+  background-position: left, top;
+}
+.sectionText .text {
+  display: flex;
+  grid-row-start: 2;
+  width: 85%;
+  grid-column-gap: 50px;
+  margin: auto;
+}
+
+.text h1 {
+  font-size: 3rem;
+  color: #dddddd;
+  letter-spacing: 5rem;
+  font-family: "Megrim", cursive;
+}
+
+.text span {
+    border-bottom: 0.1rem solid #ff4343c0;
+    padding-bottom: 10px;
+    color: #ff4343c0;
+    filter: brightness(100%);
+    letter-spacing: 5rem;
+    font-family: "Megrim", cursive;
+}
+
+.text h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #dddddd;
+  margin-top: 40px;
+  line-height: 3rem;
+}
+
+@media (max-width:1600px){
+
+  .sectionText .text{
+    grid-column-gap: 10px;
+    grid-row: 1;
+    grid-row-gap: 50px;
+    width: initial;
+    flex-wrap: wrap;
+  }
+
+  .text h1 {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .text h3{
+    width: 50%;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:740px){
+  .text h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1.4rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .text h3{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    line-height: 2rem;
+  }
+
+  .text h1 span {
+    letter-spacing: 1.4rem;
+  }
+
+}

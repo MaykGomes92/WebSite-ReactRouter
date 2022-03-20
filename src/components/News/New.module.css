@@ -1,0 +1,117 @@
+.sectionNew {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr 1fr;
+  background-image: url("https://occ-0-420-1380.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZMc-TlZDRsGOSEBS2jKMx44SQ_c6kcvfOEKUsZcnXV9IzNdGEKlqOoA32MpPkHH6weNLTXOBxTEEKlkIBnmZ9NOwcJ0.jpg?r=749");
+  background-size: cover;
+  background-position: top right;
+  min-height: 100vh;
+}
+
+.rightNew {
+  display: flex;
+  flex-direction: column;
+  color: #e6e6e6;
+  width: 400px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionImg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  grid-row: 2;
+  height: 100%;
+}
+
+.sectionImg p {
+  padding-top: 20px;
+  font-size: 1.1rem;
+  padding-left: 40px;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 2px 2px 1px black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6rem;
+}
+
+.sectionImg img {
+  width: 100%;
+}
+
+.titlesNew {
+  margin-left: 100px;
+}
+
+.rightNew .titlesNew h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.7rem;
+  font-family: "Megrim", cursive;
+  text-align: center;
+}
+
+.rightNew .titlesNew h2 {
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  font-family: "Megrim", cursive;
+}
+
+.titlesNew h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #dddddd;
+  text-align: center;
+}
+
+@media (max-width:740px){
+  .rightNew {
+    width: 250px;
+  }
+
+
+  .titlesNew {
+    padding: 0;
+    width: 100%;
+  }
+
+  .rightNew .titlesNew h1 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    width: 80vw;
+  }
+
+  .rightNew .titlesNew h2 {
+    letter-spacing: 2px;
+    width: 80vw;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .titlesNew h3{
+    width: 80vw;
+  }
+
+  .sectionImg p {
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .sectionImg img{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 540px){
+    .sectionNew{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://occ-0-420-1380.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZMc-TlZDRsGOSEBS2jKMx44SQ_c6kcvfOEKUsZcnXV9IzNdGEKlqOoA32MpPkHH6weNLTXOBxTEEKlkIBnmZ9NOwcJ0.jpg?r=749");
+    }
+}
