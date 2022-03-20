@@ -81,13 +81,14 @@
   }
 
   .rightNew .titlesNew h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 10px;
+    letter-spacing: 0.7rem;
     width: 80vw;
   }
 
   .rightNew .titlesNew h2 {
-    letter-spacing: 2px;
+    letter-spacing: 1rem;
     width: 80vw;
     margin: 20px 0;
     font-size: 1.5rem;

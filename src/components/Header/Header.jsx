@@ -11,8 +11,7 @@ const Header = () => {
 
   function handleClick() {
     setMenu(!menu);
-  } 
-
+  }
 
   return (
     <section className={styles.section}>
@@ -24,16 +23,16 @@ const Header = () => {
         <img className={styles.logoHeader} src={LogoVik} alt="Logo Vikings" />
         <ul className={menu ? styles.menuUl : styles.menNormal}>
           <li>
-            <Link to="">Home</Link>
+            <Link onClick={handleClick} to="">Home</Link>
           </li>
           <li>
-            <Link to="/history">História</Link>
+            <Link onClick={handleClick} to="/history">História</Link>
           </li>
           <li>
-            <Link to="/seasons">Temporadas</Link>
+            <Link onClick={handleClick} to="/seasons">Temporadas</Link>
           </li>
           <li>
-            <Link to="/news">Novidades</Link>
+            <Link onClick={handleClick} to="/news">Novidades</Link>
           </li>
         </ul>
       </header>
