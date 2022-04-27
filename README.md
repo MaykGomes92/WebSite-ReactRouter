@@ -11,7 +11,7 @@
 </div>
 
 ## Sobre o projeto
-* O projeto consiste em 4 páginas utilizando React-router
+* O projeto consiste em 4 páginas utilizando React-router.
 * Utilizado também css modules, para separar o css em camadas e evitar conflito de classes e estilos.
 * Componente Head criado, para definir o title do site de acordo com a Router/Componente renderizado na tela.
  
