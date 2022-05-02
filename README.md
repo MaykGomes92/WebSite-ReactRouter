@@ -17,7 +17,7 @@
  
  ![image](https://user-images.githubusercontent.com/77819811/159271777-c807db46-72c9-47f5-8a15-5e86b58aafd8.png)
  
- ## Projeto totalmente responsivo
+ ## Projeto totalmente responsivo !
  
 ![image](https://user-images.githubusercontent.com/77819811/159272134-a7ebd1c2-bf9f-4509-a9b2-b3f26c3b230e.png)
 ##
